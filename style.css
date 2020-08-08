@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #eeeeee;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(./images/pexels-photo-4091042.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+header h2{
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+}
+
+
+#logo:visited{
+    color: white;
+}
+
+.search-form{
+    padding: 2rem;
+    display: flex;
+}
+
+.search-form input{
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border: solid 2px #44CCFF;
+}
+
+.search-form input::placeholder{
+    opacity: 0.3;
+}
+
+.search-form button {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: #44CCFF;
+    color: white;
+    cursor: pointer;
+}
+
+.gallery-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    padding-top: 1rem 0rem;
+}
+
+.gallery-info a {
+    color: grey;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 5rem;
+    
+
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    padding: 1rem 3rem;
+    background: #44CCFF;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-result{
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+@media (min-width: 100px) and (max-width: 400px){
+
+    .search-form input{
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 70%;
+        
+    }
+    .gallery-img img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .gallery-info{
+        display: flex;
+        position: relative;
+        right: 10%;
+        justify-content: space-evenly;
+        color: grey;
+        padding-top: 1rem 0rem;
+        font-size: 0.8rem;
+    }
+    
+    .gallery-info a {
+        color: grey;
+    }
+    #logo{
+        
+        font-size: 2rem;
+    }
+    
+}
