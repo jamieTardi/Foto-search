@@ -19,7 +19,7 @@ header{
     linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
-    ), url(./images/pexels-photo-4091042.jpeg);
+    ), url(./images/pexels-pixabay-315998.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +120,7 @@ header h2{
     color: white;
 }
 
-@media (min-width: 100px) and (max-width: 400px){
+@media (min-width: 100px) and (max-width: 500px){
 
     .search-form input{
         font-size: 1rem;
